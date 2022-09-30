@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind stylesheet -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!-- Custom styles -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .neighbour {
+        transform: scale(0.7);
+      }
+    </style>
+    <!-- Custom script -->
+    <script defer src="./script.js"></script>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/external-phatplus-lineal-color-phatplus/64/000000/external-world-contact-us-phatplus-lineal-color-phatplus.png"
+      type="image/x-icon"
+    />
+    <title>What is my country?</title>
+  </head>
+  <body
+    class="container mx-auto bg-gray-100 text-gray-600 text-lg overflow-x-hidden"
+  >
+    <header class="flex flex-col gap-5 pt-10 items-center">
+      <h2 class="text-2xl md:text-4xl font-bold text-cyan-500">
+        What is my country?
+      </h2>
+      <form class="flex gap-5 justify-center flex-col md:flex-row">
+        <input
+          class="input-search py-2 px-4 rounded-md duration-300 shadow-md"
+          type="text"
+          placeholder="Search any country"
+        />
+        <button
+          class="btn-search bg-cyan-500 text-gray-100 font-medium py-2 px-4 rounded-md shadow-md"
+        >
+          Search
+        </button>
+      </form>
+      <div
+        class="countries-wrapper pt-10 flex justify-center items-center gap-10 flex-wrap opacity-0 duration-500"
+      ></div>
+    </header>
+  </body>
+</html>
